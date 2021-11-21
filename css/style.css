@@ -1,0 +1,54 @@
+
+html {
+	box-sizing: border-box; /* все размеры сдвигвет внутрь, сохряняя внешние размеры */
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit; /* наследует значение родителя */
+}
+
+body {
+	background-color: #f5f5f5; /* фон всего документа */
+	font-family: "Arial", "Helvetica", sans-serif; /* шрифт всего документа */
+	font-size: 16px; /* размер шрифта всего документа */
+	line-height: 20px; /* межстрочный интервал всего документа */
+	color: #000; /* цвет шрифта всего документа */
+}
+
+body.modal-active {
+	overflow: hidden; /* Отображается только область внутри элемента, остальное будет скрыто. */
+}
+
+img {
+	max-width: 100%; /* максимальная ширина по родителю */
+}
+
+a {
+	text-decoration: none; /* убирает оформление у ссылок (подчеркивание) */
+	color: inherit; /* наследует значение родителя */
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+.clearfix::after { /* исправляет баг при флоутах */
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+

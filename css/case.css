@@ -1,0 +1,170 @@
+.main-block {
+  padding-top: 63px;
+}
+
+.cases-list, .cases-add {
+  width: 470px;
+}
+
+.cases-list {
+  float: left;
+}
+
+.cases-add {
+  float: right;
+}
+
+.cases__title {
+  font-size: 21px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.cases-list__empty {
+  color: #8993ad;
+}
+
+.list-item__header {
+  border-bottom: 1px solid #d3d2d2;
+  padding: 10px 13px 10px 20px;
+}
+
+.cases-list__items {
+  margin: 0;
+  padding: 0;
+}
+
+.cases-list__item {
+  list-style-type: none;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.list-item__case {
+  position: relative;
+  background-color: #fff;
+  padding: 7px 21px 58px;
+}
+
+.list-item__title,
+.list-item__close,
+.list-item__arrow {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.list-item__title {
+  font-size: 16px;
+  font-weight: normal;
+  
+  margin: 0;
+}
+
+.list-item__close,
+.list-item__arrow
+ {
+  width: 30px;
+  height: 30px;
+  
+  border: none;
+  cursor: pointer;
+}
+
+.list-item__arrow {
+  float: right;
+}
+
+.list-item__time {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+}
+
+.list-item__close {
+  background: url("../image/clear-button.png") no-repeat center;
+  
+  margin-left: 5px;
+}
+
+.list-item__arrow {
+  background: url("../image/arrow.png") no-repeat center;
+  transform: rotate(0);
+  transition: 1s;
+}
+
+.js-arrowRotate {
+  transform: rotate(90deg);
+  transition: 1s;
+}
+
+.list-item__text,
+.list-item__time {
+  font-size: 14px;
+  color: #808080;
+  word-break: break-all;
+  margin: 0;
+  padding: 0;
+}
+
+.case-form {
+  background-color: #fff;
+  padding: 29px 40px 34px;
+}
+
+.case-form__name,
+.case-form__description {
+  font-size: 14px;
+}
+
+.case-form__title {
+  margin-right: 7px;
+}
+
+.case-form__description {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 24px;
+}
+
+.case-form p {
+  margin-bottom: 10px;
+}
+
+.case-name, .case-description {
+  width: 100%;
+  background-color: #f5f5f5;
+  border: 1px solid #d3d2d2;
+  font-size: 18px;
+}
+
+.case-name {
+  height: 45px;
+  padding: 10px;
+  margin-top: 6px;
+}
+
+.case-description {
+  height: 230px;
+  padding: 10px;
+  margin-top: 6px;
+}
+
+.case-form__btn {
+  min-width: 225px;
+  background-color: #2174fd;
+  color: #fff;
+  padding: 19px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.error {
+  border: 1px solid #e32e22;
+}
+
+.active {
+  opacity: 0;
+  transition: all 1s;
+  display: none;
+}

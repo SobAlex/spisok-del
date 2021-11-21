@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Список дел</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/case.css">
+</head>
+
+<body>
+
+  <main id="main-block" class="main-block">
+    <div class="container clearfix">
+      <h1 class="visually-hidden">Органайзер</h1>
+      <section class="cases-list">
+        <h2 class="cases__title">Список дел:</h2>
+        <p class="cases-list__empty js-casesListEmpty">Список пуст</p>
+
+        <ul class= "cases-list__items js-casesListItems">
+          
+        </ul >
+      </section>
+
+      <section class="cases-add">
+        <h2 class="cases__title">Добавить новое дело</h2>
+
+        <form class="case-form js-caseForm" name="case" enctype="multipart/form-data" method="post" action="#">
+          <label class="case-form__name">
+            <sup class="case-form__title">*</sup>Название
+            <input class="case-name js-caseName" type="text" name="titleCase" size="40" required>
+          </label>
+
+          <label class="case-form__description">
+            <sup class="case-form__title">*</sup>Описание
+            <textarea class="case-description js-caseDescription" name="descriptionCase" cols="41" rows="10" required></textarea>
+          </label>
+
+          <button class="case-form__btn js-caseFormBtn" type="submit">Добавить дело</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+
+  <script src="script/jquery-3.4.1.min.js"></script>
+  <script src="script/script.js"></script>
+</body>
+
+</html>
